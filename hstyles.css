@@ -1,0 +1,529 @@
+/* Home page chi css */
+body {
+    background-color: #343434;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    padding: 10px 10%;
+}
+
+
+ nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Name{
+    font-size: 1.5rem;
+    color: rgb(250, 156, 4);
+    font-weight: bolder;
+}
+
+
+nav ul li {
+    list-style: none;
+    margin: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: rgb(248, 151, 32);
+    font-size: 1.08rem;
+}
+
+#element {
+    color: aqua;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    align-items: center;
+}
+
+.name {
+    color: aqua;
+}
+
+.firstsection>div {
+    width: 30%;
+
+}
+
+.leftside {
+    font-size: 2rem
+}
+
+.rightside img {
+    width: 70%;
+
+}
+.btnho {
+    display: inline-block;
+    margin: 50px auto;
+    width: 35%;
+    text-align: center;
+    border: 1px solid rgb(248, 151, 32);;
+    padding: 14px 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.5s;
+}
+.btnho:hover {
+    background: rgb(253, 154, 33);
+    transform: translateY(-5px);
+    color: #040404;
+}
+/* about chi css */
+
+#about {
+    padding: 30px 0;
+    margin: 30px;
+    color:  rgb(249, 147, 74);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.r-col1 {
+    flex-basis: 35%;
+}
+
+.r-col1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.r-col2 {
+    flex-basis: 55%;
+}
+
+.subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.tab_title {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab_links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    color: azure;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab_links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab_links.active_link::after {
+    width: 50%;
+}
+
+.tab_contents ul li {
+    list-style: circle;
+    margin: 10px 0;
+}
+
+.tab_contents ul li span {
+    color: #f4edef;
+    font-size: 17px;
+
+}
+
+.tab_contents {
+    display: none;
+}
+
+.tab_contents.active_tab {
+    display: block;
+}
+
+/* **************** Certification chi style **************** */
+
+#certification {
+    padding: 30px 0;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.certification-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.certification-list div {
+    background: rgb(88, 87, 87);
+    padding: 40px;
+    margin: 15px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(249, 147, 74);
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.certification-list h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: rgb(255, 255, 255);
+
+}
+
+.certification-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.certification-list div:hover {
+    background: rgb(248, 151, 32);;
+    transform: translateY(-10px);
+    color: rgb(4, 4, 4);
+    font-weight: bold;
+
+}
+
+/* ***** Portfolio *************** */
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 15px 15px;
+}
+.h5{
+    text-align: center;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    /* height: auto;
+    margin-left: auto;
+    margin-right: auto; */
+    transition: transform 0.5s;
+}
+
+.layers {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff8c27);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 0 40px; */
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layers h3 {
+    margin-bottom: 20px;
+    font-weight: bolder;
+    color: rgb(0 255 250);
+    font-size: large;
+}
+
+.layers a {
+    margin-top: 20px;
+    color: rgb(253, 154, 33);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #040404;
+    width: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work p {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    /* padding: 14px; */
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layers{
+    height: 100%;
+}
+
+
+/* ******** Contact section ************* */
+.container2 {
+
+    margin: 20px;
+    /* padding: auto; */
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: rgb(253, 154, 33);
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.social-icon {
+    margin-top: 30px;
+    
+
+}
+
+.social-icon a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icon a:hover {
+    color: rgb(253, 154, 33);
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(253, 154, 33);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    transition: transform 0.5s;
+}
+
+.btn:hover {
+    background: rgb(253, 154, 33);
+    transform: translateY(-5px);
+    color: #040404;
+
+}
+
+.btn.btn2 {
+    background-color: #343434;
+    transition: transform 0.5s
+}
+
+.btn.btn2:hover {
+    background:rgb(253, 154, 33);
+    transform: translateY(-5px);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input,form textarea{
+    width: 97%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    margin-right: 5px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px; 
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+/* ****** responsive bhidu ********** */
+
+nav .fas{
+    display: none;
+}
+nav .fas2{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) { 
+    .firstsection{
+        flex-direction: column-reverse;
+    }
+    /* nav{
+        flex-direction: column;
+    } */
+    .leftside{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightside{
+        width: 721px !important;
+        display: flex;
+        justify-content: center;
+    }
+    .rightside img{
+        width: 45vh;
+        margin-bottom: 73px;
+    }
+    
+}
+@media screen and (max-width: 800px){
+     /* nav .fas{
+        display: block;
+        font-size: 25px;
+     }
+     nav .fas2{
+        display: block;
+        font-size: 25px;
+        margin-left: 323px;
+        margin-top: -35px;
+     }
+
+     nav ul{
+        background: #262626;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+     }
+     nav ul li{
+        display: block;
+        margin: 25px;
+     }
+     nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+     } */
+     
+     nav ul li{
+        display: none;
+     }
+     .subtitle{
+        font-size: 40px;
+     }
+     .r-col1, .r-col2{
+        flex-basis: 100%;
+     }
+     .r-col1 img{
+        width: auto;
+        margin-bottom: 30px;
+     }
+     .r-col2{
+        font-size: 14px;
+     }
+     .tab_links{
+        font-size: 16px;
+        margin-right: 20px;
+     }
+     .work p{
+        font-size: 12px;
+     }
+     .btnho{
+        
+     }
+     .contact-left, .contact-right{
+        flex-basis: 100%;
+     }
+    
+}
+
+
